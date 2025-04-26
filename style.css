@@ -6,26 +6,39 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(135deg, #2c3e50, #bdc3c7); 
-    color: #fff;
+    background-color: #1e1e2f; /* Cor sólida para o fundo */
+    color: #e0e0e0; /* Cinza claro suave */
 }
 
 canvas {
-    background-color: rgba(0, 0, 0, 0.7); 
-    border: 2px solid #fff; 
-    border-radius: 15px; 
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); 
+    background-color: rgba(255, 255, 255, 0.05); /* Mantém o fundo quase transparente */
+    border: 2px solid #4e5d78; /* Borda azul acinzentado */
+    border-radius: 20px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.6); /* Sombra mais profunda */
     display: block;
     margin: auto;
+    /* Removido o efeito de vidro fosco (backdrop-filter) */
 }
 
 button {
     position: absolute;
-    top: 50%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #5a60f0; /* Cor sólida no fundo do botão */
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 4px 12px rgba(90, 96, 240, 0.5);
     cursor: pointer;
-    z-index: 1; 
+    transition: background 0.3s ease, transform 0.2s ease;
+    z-index: 1;
+}
+
+button:hover {
+    background-color: #7f85f5; /* Cor sólida no hover */
+    transform: translate(-50%, -55%); /* Leve movimento no hover */
 }
